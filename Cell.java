@@ -3,11 +3,10 @@
  * Due Date: Sunday, February 11, 2024 by 11:59PM
  * 
  * © Oluwamosope Adeyemi. ID: 40293741
- * © Jerome Kithinji. ID: 
+ * © Jerome Kithinji. ID: 40280348
  * 
  * Written by: 
- * Jerome Kithinji. ID:
- * Oluwamosope Adeyemi. ID: 40293741
+ * Jerome Kithinji. ID: 40280348
  */
 
 package battleship;

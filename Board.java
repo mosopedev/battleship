@@ -3,7 +3,7 @@
  * Due Date: Sunday, February 11, 2024 by 11:59PM
  * 
  * © Oluwamosope Adeyemi. ID: 40293741
- * © Jerome Kithinji. ID: 
+ * © Jerome Kithinji. ID: 40280348
  * 
  * Written by: 
  * Jerome Kithinji. ID:
@@ -20,7 +20,7 @@ import java.util.Scanner;
 public class Board {
     private Cell[][] battleshipBoard = new Cell[8][8]; // The battleship game board
 
-    Scanner scanner = new Scanner(System.in);
+    private Scanner scanner = new Scanner(System.in);
 
     private int humanShipsSank = 0; // Number of opponent ships human player has sank
     private int computerShipsSank = 0; // Number of opponents ships computer has sank
@@ -35,7 +35,7 @@ public class Board {
      * @return An array of integers representing the row and column index of a cell
      *         on the Battleship grid.
      */
-    private int[] formatUserInout(String input) {
+    private int[] formatUserInput(String input) {
         String[] splitInput = input.split("");
 
         int row = Integer.parseInt(input.split("")[1]);
@@ -160,7 +160,7 @@ public class Board {
             System.out.println("Enter the coordinates of your ship #" + (humanShipCounter + 1));
             String input = scanner.nextLine();
 
-            int[] coordinate = this.formatUserInout(input);
+            int[] coordinate = this.formatUserInput(input);
             int row = coordinate[0];
             int column = coordinate[1];
 
@@ -194,7 +194,7 @@ public class Board {
 
             String input = scanner.nextLine();
 
-            int[] coordinate = this.formatUserInout(input);
+            int[] coordinate = this.formatUserInput(input);
             int row = coordinate[0];
             int column = coordinate[1];
 
@@ -224,7 +224,7 @@ public class Board {
         System.out.println("position of your rocket: ");
         String input = scanner.nextLine();
 
-        int[] coordinate = this.formatUserInout(input);
+        int[] coordinate = this.formatUserInput(input);
         int row = coordinate[0];
         int column = coordinate[1];
 
